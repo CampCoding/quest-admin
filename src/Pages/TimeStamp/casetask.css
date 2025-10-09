@@ -1,0 +1,12 @@
+.rowDiv button.btn.btn-danger {
+  margin: 0 !important;
+  width: fit-content !important;
+}
+
+.rowDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-left: auto;
+}

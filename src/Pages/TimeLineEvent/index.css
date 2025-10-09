@@ -1,0 +1,29 @@
+.ModalTable table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.ModalTable td,
+.ModalTable th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+}
+
+.ModalTable tr > td {
+  border: 1px solid #ccc;
+}
+
+.ModalTable tr > td:nth-child(1) {
+  background-color: #dddddd;
+}
+
+.showtimedata .modal-dialog {
+  width: 800px !important;
+}
+
+.modal-content .btn.btn-danger {
+  margin-top: 0px !important;
+  width: fit-content !important;
+}

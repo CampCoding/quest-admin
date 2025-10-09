@@ -1,0 +1,59 @@
+.imageUpload img {
+  width: 190px;
+}
+
+.imageUpload {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 20px;
+  background: white;
+  box-shadow: 1px 2px 24px -2px #80808045;
+  padding: 10px;
+  width: fit-content;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
+.image-body {
+  box-shadow: none !important;
+  position: relative;
+  overflow: hidden !important;
+  cursor: pointer;
+}
+
+.image-body .icon img {
+  width: 240px !important;
+}
+
+.folder.image-body .name {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000a6;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  color: white;
+  font-weight: 700;
+  gap: 10px;
+  transition: 0.75s ease-in-out;
+  top: 120%;
+}
+
+.image-body:hover .name {
+  top: 0px !important;
+}
+
+.imagesUpload img {
+  width: 240px;
+  margin: auto;
+  margin: 10px auto;
+}
+
+.imageUpload svg {
+  font-size: 88px;
+}

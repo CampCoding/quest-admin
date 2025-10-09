@@ -1,0 +1,147 @@
+/* TrueFalseQuestion.css */
+
+.quiz-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quiz-header {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #444;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-input,
+.question-textarea,
+.explanation-textarea,
+.answer-select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.answer-select {
+  max-width: 130px;
+}
+
+.question-textarea,
+.explanation-textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+}
+
+.add-btn,
+.remove-btn {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  align-self: center;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+}
+
+.add-btn:hover,
+.remove-btn:hover {
+  background-color: #0056b3;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+  .question-card {
+    flex-direction: column;
+  }
+
+  .question-textarea,
+  .explanation-textarea,
+  .question-input,
+  .answer-select {
+    width: 100%;
+  }
+
+  .add-btn,
+  .remove-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.columnDiv {
+  display: flex;
+  flex-direction: column !important;
+  width: 100%;
+}
+
+.primaryTopic button {
+  margin: 20px;
+  margin-left: auto !important;
+}
+
+:root {
+  --input-color: #99a3ba;
+  --input-border: #cdd9ed;
+  --input-background: #fff;
+  --input-placeholder: #cbd1dc;
+  --input-border-focus: #275efe;
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #eef4ff;
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678efe;
+}
+
+.audioNote {
+  width: 100% !important;
+  height: 40px !important;
+  margin: 10px 0;
+}
+.primaryTopic input {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border 0.3s ease;
+}

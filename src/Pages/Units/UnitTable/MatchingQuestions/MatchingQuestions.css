@@ -1,0 +1,96 @@
+/* MatchingQuestions.css */
+
+.matching-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.matching-header {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #444;
+  font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+.pair-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-textarea, .answer-textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.question-textarea, .answer-textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+}
+
+.add-btn, .remove-btn {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  align-self: center;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+}
+
+.add-btn:hover, .remove-btn:hover {
+  background-color: #0056b3;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+  .pair-card {
+    flex-direction: column;
+  }
+
+  .question-textarea, .answer-textarea {
+    width: 100%;
+  }
+
+  .add-btn, .remove-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.danger-ext-ans button.btn.btn-danger {
+  margin: 0px 0 0px 0 !important;
+  max-width: 130px !important;
+}
+
+.danger-ext-ans li{
+  justify-content: space-between;
+}

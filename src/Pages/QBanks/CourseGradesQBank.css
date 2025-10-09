@@ -1,0 +1,105 @@
+.course-grades-container {
+  display: flex;
+  margin: 0 40px;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  /* overflow: auto; */
+  max-width: 100% !important;
+
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.grades,
+.courses {
+  width: min(430px, 100%);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.grade-info {
+  flex-grow: 1;
+}
+
+.grade-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.university-name {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.grade button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.grade button:hover {
+  background-color: #d32f2f;
+}
+
+.course {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.course-img {
+  width: 100px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.course-details {
+  flex-grow: 1;
+}
+
+.course-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.course-grade {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.unassign-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.unassign-btn:hover {
+  background-color: #d32f2f;
+}

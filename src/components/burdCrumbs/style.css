@@ -1,0 +1,7 @@
+h3.Page.Title {
+  margin: 20px 0 10px;
+  padding: 0 10px;
+}
+.customBreadCrumbs button {
+  margin: 0 20px !important;
+}

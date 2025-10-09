@@ -1,0 +1,47 @@
+.univs span {
+  padding: 6px 11px;
+  border: 0.1px solid;
+  transition: 0.5s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.univs span.active {
+  background: #04eb71 !important;
+  color: white;
+}
+
+.univs {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  margin: 20px 0;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.home-page-content.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 77vh;
+  max-height: 77vh;
+}
+
+.welocme p {
+  color: #597b87;
+}
+
+.welocme {
+  font-size: 37px;
+}
+.welocme span {
+  font-weight: 900;
+  color: #f45872;
+}
+.welocme {
+  display: flex;
+}

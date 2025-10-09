@@ -1,0 +1,24 @@
+.folders {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.folder {
+  display: flex;
+}
+.folder .icon img {
+  width: 30px;
+}
+
+.folder {
+  display: flex;
+  gap: 9px;
+  margin: 10px 0;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 1px 2px 24px -2px #e5e5eab5;
+  width: fit-content;
+  border-radius: 7px;
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.addtask {
+  margin: 10px 0px;
+  text-align: right;
+}
+
+.Mr_Elementery {
+  width: 80px;
+  border: 1px solid #80808063;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+
+.Mr_Elementery:focus{
+  border: none !important;
+  
+}

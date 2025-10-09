@@ -1,0 +1,24 @@
+.card-wrapper {
+  margin-top: 20vh;
+}
+
+div#localVideo,
+div#remoteVideoGrid {
+  margin-top: 50vh;
+}
+/* 
+.remote-video-container {
+  width: min(600px, 100%);
+  height: 600px;
+} */
+
+div#remoteusers {
+  margin-top: 60pt !important;
+  width: 100%;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  align-items: center;
+  padding: 30px;
+  gap: 9px;
+}

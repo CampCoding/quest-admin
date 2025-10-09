@@ -1,0 +1,255 @@
+.reel-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.reel-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.reel-thumbnail {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reel-thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+}
+
+.play-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #333;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.reel-card:hover .play-icon {
+  transform: scale(1.1);
+  background: white;
+}
+
+.reel-content {
+  padding: 25px;
+}
+
+.reel-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.reel-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.reel-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reel-category {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.reel-duration {
+  color: #888;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.reel-stats {
+  display: flex;
+  gap: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.add-reel-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.add-reel-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-tab:hover,
+.filter-tab.active {
+  background: white;
+  color: #333;
+  border-color: white;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .reels-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .reel-content {
+    padding: 20px;
+  }
+
+  .add-reel-btn {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Animation for cards */
+.reel-card {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reel-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.reel-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.reel-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.reel-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.reel-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.reel-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .reel_player {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: black;
+} */
+
+:where(.css-dev-only-do-not-override-ut69n1).ant-modal .ant-modal-content {
+  padding: 0px !important;
+  /* background-color: black !important; */
+}
+
+.video {
+  border-radius: 10px !important;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  color: white;
+}
+
+.action_btns {
+  width: 100%;
+  direction: rtl;
+  margin: 10px 0;
+}
+
+#table-invoices-list
+  > div.table-responsive.react-table
+  > table
+  > tbody
+  > tr
+  > td
+  > div
+  > div
+  > button {
+  color: black !important;
+}

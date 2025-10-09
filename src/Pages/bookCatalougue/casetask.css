@@ -1,0 +1,31 @@
+.listTimeStamp input {
+  outline: none;
+  border: none;
+  border-bottom: 0.1px solid;
+  border-right: 0.1px solid;
+  border-radius: 3px;
+}
+
+.listTimeStamp {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addTimStamp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addTimStamp span:last-child,
+.listTimeStamp span.btn.btn-danger {
+  margin: 0 !important;
+  font-size: 22px;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  padding: 10px;
+}

@@ -1,0 +1,26 @@
+.answerControl {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.answerContainer .btn.btn-danger {
+  margin-top: 0 !important;
+  width: fit-content;
+}
+
+.answerContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.btns button.btn.btn-danger,
+.btns button.btn.btn-success {
+  width: fit-content !important;
+  height: fit-content !important;
+  margin-top: 0 !important;
+}

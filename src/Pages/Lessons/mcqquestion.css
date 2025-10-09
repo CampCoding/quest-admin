@@ -1,0 +1,143 @@
+.upimgdiv {
+  position: relative;
+}
+
+.up_img {
+  position: absolute;
+  width: 40px;
+  top: 40%;
+  right: 10px;
+  cursor: pointer;
+  /* transform: translateY(-50%); */
+}
+
+td img {
+  width: 90px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+:root {
+  --martinique: #323357;
+  --mariner: #2a5bda;
+  --bright-sun: #fccc4d;
+  --zircon: #f5f8ff;
+  --black: #000000;
+  --white: #ffffff;
+  --mercury: #e5e5e5;
+  --comet: #595b71;
+}
+
+.QuestionsDiv .card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: min(400px, 100%);
+  text-align: center;
+  filter: drop-shadow(0.1rem 1rem 0.2rem rgba(0, 0, 0, 0.3));
+}
+.QuestionsDiv .card-title {
+  -webkit-text-stroke: 1px var(--black);
+  -webkit-text-fill-color: var(--martinique);
+  font-size: 1.2rem;
+  font-weight: bold;
+  filter: drop-shadow(0.1rem 0.25rem 0.1rem rgba(0, 0, 0, 0.5));
+}
+.QuestionsDiv .card-rating {
+  margin: 2rem 0 1rem;
+  /* background-color: var(--zircon); */
+  border-radius: 4rem;
+  /* padding: 1rem 1.5rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  grid-gap: 6px;
+}
+.ratings img {
+  width: 20px;
+  height: 20px;
+}
+.QuestionsDiv .card-rating-text {
+  font-size: 0.6rem;
+  color: var(--martinique);
+  font-weight: 400;
+}
+.QuestionsDiv .rating-count {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: var(--comet);
+}
+.QuestionsDiv .rating-percents {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 0.3rem;
+}
+.QuestionsDiv .rating-percent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.QuestionsDiv .rating-no {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--mariner);
+}
+.QuestionsDiv .rating-progress {
+  margin: 0 0.8rem;
+  background-color: var(--zircon);
+  border-radius: 1.8rem;
+  width: 80%;
+  height: 1rem;
+  position: relative;
+}
+.QuestionsDiv .rating-progress::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--bright-sun);
+  border-radius: 1.8rem;
+}
+
+.QuestionsDiv .rating-percent:nth-child(1) .rating-progress::before {
+  width: 74%;
+}
+.QuestionsDiv .rating-percent:nth-child(2) .rating-progress::before {
+  width: calc(2 * 9%);
+}
+.QuestionsDiv .rating-percent:nth-child(3) .rating-progress::before {
+  width: calc(2 * 4%);
+}
+.QuestionsDiv .rating-percent:nth-child(4) .rating-progress::before {
+  width: calc(2 * 2%);
+}
+.QuestionsDiv .rating-percent:nth-child(5) .rating-progress::before {
+  width: calc(2 * 1%);
+}
+.QuestionsDiv .rating-percent-no {
+  font-size: 0.8rem;
+  color: var(--martinique);
+  font-weight: 400;
+}
+.QuestionsDiv .card-footer-text {
+  margin-top: 3rem;
+  font-size: 0.6rem;
+  color: var(--mariner);
+  font-weight: 400;
+}
+
+.QuestionsDiv .card {
+  width: 300px;
+}
+
+.QuestionsDiv {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}

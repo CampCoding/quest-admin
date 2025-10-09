@@ -1,0 +1,118 @@
+.modal_custom {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+  min-height: fit-content !important;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  padding-top: 30px !important;
+}
+
+.modelAnswers {
+  padding: 10px;
+}
+.QuestionAnsewers.modal-dialog {
+  max-width: 100% !important;
+}
+
+.links_images.overAllImages .postImage {
+  padding: 22px;
+  align-items: center;
+}
+
+.links_images.overAllImages .postImage .btn {
+  width: fit-content !important;
+  margin: 0 !important;
+}
+
+.imageViewer {
+  padding: 25px !important;
+}
+
+.modal-content .imageViewer .btn.btn-danger {
+  width: fit-content !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.MCQDIV {
+  margin-top: 120px !important;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 30px;
+  width: 100% !important;
+  font-size: 19px !important;
+}
+
+.rowDiv.MCQDIV input {
+  width: min(450px, 100%);
+  padding: 6px 8px;
+}
+
+.printsCloumns,
+.printsCloumns h4.modal-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100% !important;
+}
+
+.printsRowCol > span {
+  font-weight: 900;
+  font-size: 20px;
+}
+.printsRowCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rowPrints {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.rowBetweenDiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.btnsKteer{
+  display: flex;
+  gap:10px;
+  align-items: center;
+}
+
+.btnsKteer .btn{
+white-space: nowrap;
+}
